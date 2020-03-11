@@ -1,6 +1,6 @@
 // Generate random room name if needed
 if (!location.hash) {
-  location.hash = 1;
+  location.hash = 10;
 }
 const roomHash = location.hash.substring(1);
 console.log(roomHash);
@@ -77,7 +77,7 @@ function startWebRTC(isOfferer) {
   };
 
   navigator.mediaDevices.getUserMedia({
-    audio: true,
+    audio: false,
     video: true,
   }).then(stream => {
     // Display your local video in #localVideo element
