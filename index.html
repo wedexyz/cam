@@ -8,7 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="site.css">
 	</head>
 	<body>
-		
 		<div id="map"></div>
 		<div id="search1">
 			<button type="button" onclick="addr_search(),webcamMgr.startCamera()">Tampilkan data</button>
@@ -19,12 +18,10 @@
 		</div>
 		<div id="search">
 			<video id="remoteVideo" autoplay  muted style="display: none;"></video>
-			<video id="localVideo"   muted style="position:absolute;left:0px;top:0px;width: 320px; height: 240px;"></video>
+			<video id="localVideo"  autoplay   muted style="position:absolute;left:0px;top:0px;width: 320px; height: 240px;"></video>
 			<canvas id="canvas" style="position:absolute;left:0px;top:0px"></canvas>
 			<input type="text" name="addr" id="addr" size="10" style="display: none;">
 		</div>
-		
-
 		<script src="js/leaflet.js"></script>
 		<script src="libfirejeq/jquery.min.js"></script>
 		<script src="js/map.js"></script>
