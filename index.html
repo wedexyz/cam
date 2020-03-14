@@ -10,7 +10,7 @@
 	<body>
 		<div id="map"></div>
 		<div id="search1">
-			<button type="button" onclick="addr_search(),webcamMgr.startCamera(),play()">Tampilkan data</button>
+			<button type="button" onclick="addr_search(),webcamMgr.startCamera(),playvideo()">Tampilkan data</button>
 			<input type="text" id="input" style="display: none;">
 			<input type="text" id="waktu" style="display: none;">
 			<input type="text" id="face" style="display: none;">
@@ -37,7 +37,7 @@
 		<script src="libfirejeq/cloud.js"></script>
                 <script>
                var v= document.getElementbyId('localVideo');
-                function play(){
+                function playvideo(){
                 v.play();
                 }
               </script>
